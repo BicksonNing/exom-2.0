@@ -1,0 +1,36 @@
+{
+  "name": "exom-2.0",
+  "version": "1.0.0",
+  "description": "Exom 2.0 ecommerce",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BicksonNing/exom-2.0.git"
+  },
+  "author": "Bickson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BicksonNing/exom-2.0/issues"
+  },
+  "homepage": "https://github.com/BicksonNing/exom-2.0#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.8"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}
